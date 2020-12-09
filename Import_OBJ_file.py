@@ -22,7 +22,7 @@ list_of_colors = []
 material = []
 ability_id = ""
 loaded_json = ""
-obj_file_name = "outside.obj"
+obj_file_name = ""
 
 
 #Handle the .obj file
@@ -39,6 +39,8 @@ def return_according_coord(int_):
 def calculate_color(normal):
     color = max(-1.0,array(normal).dot(array([1.0,0.5,0.1])))
     return color
+
+obj_file_name = input(".obj file to import: ")
 
 with open(obj_file_name, mode="r") as f:
     lines = f.read().splitlines()
