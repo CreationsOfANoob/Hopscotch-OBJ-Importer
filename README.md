@@ -7,6 +7,8 @@ Requirements:
 * Numpy
 * Python 3.x
 
+I downloaded a program called Anaconda to manage Python packages, it seems to be really useful. (then use Spyder via Anaconda)
+
 The obj file needs to contain only triangulated faces (no quads or n-gons). Materials are supported, will be included in the HS project as a material index variable for each face.
 
 Use the template .json project. The way I wrote the importer requires a specific object and some specific variables to exist in the project.
